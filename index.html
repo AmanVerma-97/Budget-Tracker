@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Budget Tracker</h1>
+    <div class="container">
+        <form id="budget-form">
+           <!-- Create description and amount input here. The id of description input should be "description" and Amount should be "amount". -->
+            <input type="text" id="description" placeholder="Enter income/expense description" />
+            <input type="number" step="1" id="amount" placeholder="Enter amount"/>
+            <select id="type">
+               <!-- Create income and expense options here, value of Income should be "income" and Expense should be "expense"-->
+               <option value="income" >Income</option>
+               <option value="expense">Expense</option>
+            </select>
+            <!-- Add a button here that will add income and expense, should have type "submit". -->
+            <button type="submit" id="add-btn">Add</button>
+        </form>
+        <div id="budget-display">
+            <!-- Display the budget here after adding expense or income. The id of the budget should be "total-budget". -->
+            <h3 id="total-budget">Total Budget: ₹0</h3>
+        </div>
+
+        <ul id="entry-list"></ul>
+    </div>
+</body>
+<script src="script.js" type="module"></script>
+</html>

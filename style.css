@@ -1,0 +1,90 @@
+/* Write your desired css here */
+body{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: burlywood;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+#budget-form{
+    width: 100%;
+    background-color: rgb(255, 204, 0);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#budget-display{
+    width: 100%;
+    background-color: rgb(37, 162, 211);
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+}
+
+[type="submit"]{
+    padding: 3px 15px;
+    background-color: rgb(52, 150, 52);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+select, [type="text"], [type="number"]{
+    width: 25%;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+}
+
+ul{
+    list-style-type: none;
+    width: 80%;
+    padding: 10px;
+}
+
+li{
+    padding: 5px;
+    margin: 5px 0px;
+    background-color: rgb(255, 204, 0);
+    border: 2px solid rgb(58, 13, 58);
+    border-radius: 3px;
+    color: white;
+}
+
+li>button{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 3px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px 5px;
+}
+
+.income-tag{
+    background-color: rgb(76, 158, 76);
+}
+
+.expense-tag{
+    background-color: rgb(186, 110, 110);
+}
+
+.negative::after{
+    content: " (Negative Balance) ";
+    color: red;
+}
