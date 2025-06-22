@@ -36,17 +36,20 @@ body{
 }
 
 [type="submit"]{
-    padding: 3px 15px;
+    padding: 5px 15px;
     background-color: rgb(52, 150, 52);
     border-radius: 5px;
-    border: none;
+    border: 1px solid darkgreen;
     color: white;
     cursor: pointer;
+}
+[type="submit"]:hover{
+    background-color: rgb(34, 115, 34);
 }
 
 select, [type="text"], [type="number"]{
     width: 25%;
-    padding: 3px;
+    padding: 6px;
     border: none;
     border-radius: 3px;
 }
@@ -69,11 +72,15 @@ li{
 li>button{
     background-color: rgb(255, 0, 0);
     color: white;
-    border: none;
+    border: 1px solid rgb(66, 11, 16);
     padding: 3px 5px;
     border-radius: 3px;
     cursor: pointer;
     margin: 5px 5px;
+}
+
+li>button:hover{
+    background-color: rgb(139, 31, 31);
 }
 
 .income-tag{
